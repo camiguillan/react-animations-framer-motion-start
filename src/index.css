@@ -283,7 +283,7 @@ main {
 }
 
 .challenge-item-details.expanded .challenge-item-details-icon {
-  transform: rotate(180deg);
+  transform: rotate(180deg); 
 }
 
 .challenge-item-description {
