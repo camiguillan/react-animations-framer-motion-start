@@ -314,7 +314,28 @@ main {
   width: 30rem;
   max-width: 90%;
   z-index: 10;
+  animation: slide-up-fade-in 0.3s ease-out forwards;
 }
+
+@keyframes slide-up-fade-in {
+  0%{
+    transform: translateY(30px);
+    opacity: 0;
+  } /*initial state*/
+
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }/*final state*/
+}
+
+/*
+CSS ANIMATIONS: Define a sequence of steps on their own 
+using the special @key frame
+
+forwards -> keep end state when animation finishes
+
+*/
 
 .modal h2 {
   margin-top: 0;
