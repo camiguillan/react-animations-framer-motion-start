@@ -28,7 +28,11 @@ export default function ChallengeItem({
   }
 
   return (
-    <li>
+    <motion.li
+      layout
+        //layout changes will be animated
+        exit={{y: -30, opacity:0}}
+    >
       <article className="challenge-item">
         <header>
           <img {...challenge.image} />
@@ -62,6 +66,6 @@ export default function ChallengeItem({
           )}
         </div>
       </article>
-    </li>
+    </motion.li>
   );
 }
